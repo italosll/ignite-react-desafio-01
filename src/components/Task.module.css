@@ -1,0 +1,36 @@
+.container {
+  background: var(--gray-500);
+  margin-top: 12px;
+  border-radius: 8px;
+  display: flex;
+  padding: 16px;
+  align-items: flex-start;
+}
+
+.container > :nth-child(1) {
+  margin-right: 12px;
+}
+
+.container > :nth-child(1):hover {
+  cursor: pointer;
+}
+
+.taskDescription {
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin-right: 12px;
+}
+
+.taskFinishedDescription {
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin-right: 12px;
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.container > :nth-child(3):hover {
+  cursor: pointer;
+}

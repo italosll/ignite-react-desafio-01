@@ -1,0 +1,103 @@
+.header {
+  background-color: var(--gray-700);
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 736px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+main > p {
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
+}
+
+main > p > :first-child {
+  color: var(--blue-500);
+  font-weight: 700;
+  line-height: 1.4;
+  font-size: 0.875rem;
+}
+
+main > p > :nth-child(2) {
+  font-weight: 700;
+  background: var(--gray-400);
+  padding: 5px 10px;
+  border-radius: 25px;
+  margin-left: 8px;
+  font-size: 0.75rem;
+}
+
+main > p > :nth-child(3) {
+  font-weight: 700;
+  color: var(--purple-500);
+  line-height: 1.4;
+  margin-left: auto;
+  font-size: 0.875rem;
+}
+
+main > p > :nth-child(4) {
+  font-weight: 700;
+  background: var(--gray-400);
+  padding: 5px 10px;
+  border-radius: 25px;
+  margin-left: 8px;
+  font-size: 0.75rem;
+}
+
+form {
+  display: flex;
+  margin-top: -27px;
+}
+
+form > input {
+  width: 100%;
+  height: 52px;
+  margin-right: 8px;
+  background: var(--gray-500);
+  border-radius: 8px;
+  border: none;
+  padding-left: 8px;
+  color: var(--gray-300);
+}
+
+form > button {
+  width: 90px;
+  min-width: 90px;
+  height: 52px;
+  border-radius: 8px;
+  background: var(--blue-500);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form > button > img {
+  margin-left: 8px;
+}
+
+form > button:hover {
+  cursor: pointer;
+}
+
+form > button:focus {
+  background: var(--blue-700);
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+  main {
+    width: 90%;
+  }
+}
